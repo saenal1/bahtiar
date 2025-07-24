@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan jquery pertama</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+    <p id="paragraf">ini adalah paragraf pertama</p>
+    <p id="paragraf2">ini adalah paragraf kedua</p>
+    <button id="tombol1">klik saya</button>
+    <button id="tombol2">tampilkan paragraf</button>
+ <script>
+    $(document).ready(function(){
+
+       $("#tombol1").click(function(){
+            $("#paragraf").fadeOut("show");
+            $("#paragraf2").fadeOut("show");
+       });
+       $("#tombol2").click(function(){
+            $("#paragraf").fadeIn("show");
+            $("#paragraf2").fadeIn("show");
+        });
+    });
+ </script>   
+</body>
+</html>
